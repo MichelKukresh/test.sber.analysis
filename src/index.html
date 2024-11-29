@@ -37,14 +37,14 @@
               placeholder="Пароль"
               required
             />
-          </div>
 
-          <div id="loginError" class="form__error form__error_none">
-            <div class="form__alarm">
-              <div></div>
-              <div></div>
+            <div id="loginError" class="form__error form__error_none">
+              <div class="form__alarm">
+                <div></div>
+                <div></div>
+              </div>
+              <span>Логин или пароль неверны</span>
             </div>
-            <span>Логин или пароль неверны</span>
           </div>
 
           <button
@@ -85,14 +85,15 @@
         <div class="dashboard">
           <h1 class="dashboard__title">Потребительская корзина туриста</h1>
           <div class="dasbord__container">
-            <div style="height: 400px; width: 400px; position: relative">
-              <div class="dashbord__result">
-                <h3>Траты</h3>
-                <span>883.9 млн ₽</span>
+            <div class="dashboard__chart-container">
+              <div style="height: 250px; width: 250px; position: relative">
+                <div class="dashbord__result">
+                  <h3>Траты</h3>
+                  <span>883.9 млн ₽</span>
+                </div>
+                <canvas id="chartContainer" class="dashboard__chart"></canvas>
               </div>
-              <canvas id="chartContainer" class="dashboard__chart"></canvas>
             </div>
-
             <div class="dashbord__table">
               <h1 class="dashboard__title">
                 Структура Потребительской корзины
@@ -102,6 +103,7 @@
           </div>
         </div>
       </section>
+
       <section
         id="loadingMessage"
         class="section section__loading section_hidden"
@@ -121,8 +123,11 @@
         страницу авторизации.
       </p>
       <div class="popup__bottom">
-        <button id="popup-log-out-btn" class="buttons buttons_popup-log-out">Выйти</button
-        ><button id="popup-cancel-btn" class="buttons buttons_cancel">Отмена</button>
+        <button id="popup-log-out-btn" class="buttons buttons_popup-log-out">
+          Выйти</button
+        ><button id="popup-cancel-btn" class="buttons buttons_cancel">
+          Отмена
+        </button>
       </div>
     </div>
 

@@ -1,9 +1,9 @@
 .dashboard {
   background-color: #ffffff;
-  padding: 50px 50px 50px 50px;
-  gap: 32px;
+  padding: 25px 50px 50px 50px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
-  max-width: 1024px;
+  max-width: 1128px;
   width: 100%;
 }

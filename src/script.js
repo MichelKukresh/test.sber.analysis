@@ -95,10 +95,10 @@ function writeToSheets(table) {
     const circleContainer = document.createElement("div");
 
     // Создаем кружочек
-    const circle = document.createElement("span");
+    const circle = document.createElement("div");
     circle.style.display = "inline-block";
-    circle.style.width = "10px";
-    circle.style.height = "10px";
+    circle.style.width = "8px";
+    circle.style.height = "8px";
     circle.style.borderRadius = "50%";
     circle.style.backgroundColor = item.colors;
 

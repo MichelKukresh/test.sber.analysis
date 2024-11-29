@@ -45,6 +45,7 @@
 @import url("../src/blocks/dashboard/__table/dashbord__table.css");
 @import url("../src/blocks/dashboard/__container/dasbord__container.css");
 @import url("../src/blocks/dashboard/__result/dashbord__result.css");
+@import url("../src/blocks/dashboard/__chart-container/dashboard__chart-container.css");
 
 @import url("../src/blocks/popup/popup.css");
 @import url("../src/blocks/popup/__bottom/popup__bottom.css");

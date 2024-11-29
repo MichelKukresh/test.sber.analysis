@@ -1,11 +1,11 @@
 .dashbord__result {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  top: 40%;
-  right: 40%;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 39%;
+    right: 30%;
+    align-items: center;
 }
 
 .dashbord__result h3 {

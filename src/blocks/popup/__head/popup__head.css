@@ -1,8 +1,13 @@
 .popup__head {
     background-color: #F2F4F7;
     padding: 20px;
+    height: 40px;
 }
 
 .popup__head h2 {
     margin: 0px;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 7px;
+    margin-left: 11px;
 }

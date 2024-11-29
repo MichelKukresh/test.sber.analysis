@@ -1,24 +1,23 @@
 .spinner_page {
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   background: conic-gradient(white, #107f8c);
+  
 }
 
 .spinner_page::before {
-  top: 4px;
-  left: 4px;
-  width: 24px;
-  height: 24px;
-
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;  
   background: #f2f4f7;
 }
 
-/* Маленький кружочек как из макета*/
-.spinner_page::after {
+/* Маленький кружочек как из макета */
+.spinner_page::after { 
   top: 0px;
-  left: 15px;
-  width: 4px;
-  height: 4px;
-
+  left: 10px;
+  width: 3px;
+  height: 3px; 
   background: #107f8c;
 }

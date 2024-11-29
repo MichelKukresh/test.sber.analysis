@@ -6,7 +6,9 @@
   padding: 10px;
   background-image: url("../../../images/close.svg");
   background-repeat: no-repeat;
-  height: 33px;
-  width: 33px;
+  height: 30px;
+  width: 30px;
   background-size: cover;
+  margin-top: 5px;
+  margin-right: 7px;
 }

@@ -1,22 +1,22 @@
 .spinner {
-    width: 20px; /* Ширина бублика */
-    height: 20px; /* Высота бублика */
-    border-radius: 50%; /* Скругление для создания круга */
-    background: conic-gradient(#107f8c, white); /* Градиент от зеленоватого к белому */
-    animation: spin 1s linear infinite; /* Анимация вращения */
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    background: conic-gradient(#107f8c, white); 
+    animation: spin 1s linear infinite; 
     position: relative;
-    overflow: hidden; /* Скрытие лишнего содержимого */
+    overflow: hidden; 
 }
 
 .spinner::before {
     content: '';
     position: absolute;
-    top: 2px; /* Смещение для создания эффекта бублика */
-    left: 2px; /* Смещение для создания эффекта бублика */
-    width: 16px; /* Внутренний круг */
-    height: 16px; /* Внутренний круг */
-    border-radius: 50%; /* Скругление для внутреннего круга */
-    background: #107f8c; /* Цвет внутреннего круга */
+    top: 2px; 
+    left: 2px; 
+    width: 16px; 
+    height: 16px; 
+    border-radius: 50%; 
+    background: #107f8c; 
 }
 
 /* Маленький кружочек как из макета */

@@ -8,9 +8,8 @@
     color: #7D838A; 
 }
 
-.form__select option {
-    height: 30px;
-    box-shadow: #1F1F2240;
+
+.form__select option {   
     border: none;
     color: #005E7F; 
     font-size: 14px;
