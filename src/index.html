@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход в систему</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header class="header page__content-header">
+      <div class="header__container">
+        <a href=""><img src="../src/images/logo.svg" /></a>
+        <div class="header__nav">
+          <span>tourism</span
+          ><button id="open-popup" class="buttons buttons_log-out">
+            Выйти
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main page__content-main">
+      <section id="authorizations" class="section section__authorizations">
+        <form class="form">
+          <h1 class="form__title">Вход в панель</h1>
+          <div class="form__container-input">
+            <input
+              type="text"
+              id="username"
+              class="form__input"
+              placeholder="Логин"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              class="form__input"
+              placeholder="Пароль"
+              required
+            />
+          </div>
+          <div id="loginError" class="login__error"></div>
+
+          <button
+            id="loginButton"
+            type="button"
+            class="login__button buttons buttons_log-in button_disabled"
+            disabled
+          >
+            Войти
+          </button>
+        </form>
+      </section>
+
+      <section
+        id="serviceSelection"
+        class="section section__service-selection section_hidden"
+      >
+        <form class="form">
+          <h1 class="form__title">Выберите сервис</h1>
+          <select id="serviceSelect" class="form__select">
+            <option value="" disabled selected hidden>Выберите сервис</option>
+            <option value="service1">census</option>
+            <option value="service2">ga</option>
+            <option value="service3">tourism</option>
+          </select>
+          <button
+            id="selectServiceButton"
+            type="button"
+            class="login__button buttons buttons_log-in button_disabled"
+            disabled
+          >
+            Подтвердить
+          </button>
+        </form>
+      </section>
+
+      <section id="dashboard" class="section section__dashboard section_hidden">
+        <div class="dashboard">
+          <h1 class="dashboard__title">Потребительская корзина туриста</h1>
+          <div class="dasbord__container">
+            <div style="height: 400px; width: 400px; position: relative">
+              <div class="dashbord__result">
+                <h3>Траты</h3>
+                <span>883.9 млн ₽</span>
+              </div>
+              <canvas id="chartContainer" class="dashboard__chart"></canvas>
+            </div>
+
+            <div class="dashbord__table">
+              <h1 class="dashboard__title">
+                Структура Потребительской корзины
+              </h1>
+              <ul id="dashboardLists"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="loadingMessage" class="section section__loading section_hidden">
+        <div class="spinner spinner_page"></div>
+       </section>
+    </main>
+
+   
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <div class="popup__head">
+        <button class="buttons buttons_close-btn" id="close-btn"></button>
+        <h2>Внимание</h2>
+      </div>
+      <p class="popup__content">
+        Вы выходите из авторизованного профиля, вы будете перенаправлены на
+        страницу авторизации.
+      </p>
+      <div class="popup__bottom">
+        <button class="buttons buttons_popup-log-out">Выйти</button
+        ><button class="buttons buttons_cancel">Отмена</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

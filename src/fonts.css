@@ -1,0 +1,219 @@
+
+           
+@font-face {
+    font-family: 'SBSansInterface';
+    src: url('/common_static/sbsansui-semibold.eot');
+    src: url('/common_static/sbsansui-semibold.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansui-semibold.woff2') format('woff2'),
+url('/common_static/sbsansui-semibold.woff') format('woff'),
+url('/common_static/sbsansui-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansInterface';
+    src: url('/common_static/sbsansui-regular.eot');
+    src: url('/common_static/sbsansui-regular.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansui-regular.woff2') format('woff2'),
+url('/common_static/sbsansui-regular.woff') format('woff'),
+url('/common_static/sbsansui-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansInterface';
+    src: url('/common_static/sbsansui-light.eot');
+    src: url('/common_static/sbsansui-light.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansui-light.woff2') format('woff2'),
+url('/common_static/sbsansui-light.woff') format('woff'),
+url('/common_static/sbsansui-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansText';
+    src: url('/common_static/sbsanstext-bold.eot');
+    src: url('/common_static/sbsanstext-bold.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsanstext-bold.woff2') format('woff2'),
+url('/common_static/sbsanstext-bold.woff') format('woff'),
+url('/common_static/sbsanstext-bold.ttf') format('truetype'),
+url('/common_static/sbsanstext-bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansText';
+    src: url('/common_static/sbsanstext-semibold.eot');
+    src: url('/common_static/sbsanstext-semibold.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsanstext-semibold.woff2') format('woff2'),
+url('/common_static/sbsanstext-semibold.woff') format('woff'),
+url('/common_static/sbsanstext-semibold.ttf') format('truetype'),
+url('/common_static/sbsanstext-semibold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansText';
+    src: url('/common_static/sbsanstext-medium.eot');
+    src: url('/common_static/sbsanstext-medium.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsanstext-medium.woff2') format('woff2'),
+url('/common_static/sbsanstext-medium.woff') format('woff'),
+url('/common_static/sbsanstext-medium.ttf') format('truetype'),
+url('/common_static/sbsanstext-medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansText';
+    src: url('/common_static/sbsanstext-regular.eot');
+    src: url('/common_static/sbsanstext-regular.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsanstext-regular.woff2') format('woff2'),
+url('/common_static/sbsanstext-regular.woff') format('woff'),
+url('/common_static/sbsanstext-regular.ttf') format('truetype'),
+url('/common_static/sbsanstext-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansText';
+    src: url('/common_static/sbsanstext-light.eot');
+    src: url('/common_static/sbsanstext-light.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsanstext-light.woff2') format('woff2'),
+url('/common_static/sbsanstext-light.woff') format('woff'),
+url('/common_static/sbsanstext-light.ttf') format('truetype'),
+url('/common_static/sbsanstext-light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url('/common_static/sbsansdisplay-bold.eot');
+    src: url('/common_static/sbsansdisplay-bold.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansdisplay-bold.woff2') format('woff2'),
+url('/common_static/sbsansdisplay-bold.woff') format('woff'),
+url('/common_static/sbsansdisplay-bold.ttf') format('truetype'),
+url('/common_static/sbsansdisplay-bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url('/common_static/sbsansdisplay-semibold.eot');
+    src: url('/common_static/sbsansdisplay-semibold.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansdisplay-semibold.woff2') format('woff2'),
+url('/common_static/sbsansdisplay-semibold.woff') format('woff'),
+url('/common_static/sbsansdisplay-semibold.ttf') format('truetype'),
+url('/common_static/sbsansdisplay-semibold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url('/common_static/sbsansdisplay-medium.eot');
+    src: url('/common_static/sbsansdisplay-medium.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansdisplay-medium.woff2') format('woff2'),
+url('/common_static/sbsansdisplay-medium.woff') format('woff'),
+url('/common_static/sbsansdisplay-medium.ttf') format('truetype'),
+url('/common_static/sbsansdisplay-medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url('/common_static/sbsansdisplay-regular.eot');
+    src: url('/common_static/sbsansdisplay-regular.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansdisplay-regular.woff2') format('woff2'),
+url('/common_static/sbsansdisplay-regular.woff') format('woff'),
+url('/common_static/sbsansdisplay-regular.ttf') format('truetype'),
+url('/common_static/sbsansdisplay-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url('/common_static/sbsansdisplay-light.eot');
+    src: url('/common_static/sbsansdisplay-light.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansdisplay-light.woff2') format('woff2'),
+url('/common_static/sbsansdisplay-light.woff') format('woff'),
+url('/common_static/sbsansdisplay-light.ttf') format('truetype'),
+url('/common_static/sbsansdisplay-light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSans';
+    src: url('/common_static/sbsansui-semibold.eot');
+    src: url('/common_static/sbsansui-semibold.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansui-semibold.woff2') format('woff2'),
+url('/common_static/sbsansui-semibold.woff') format('woff'),
+url('/common_static/sbsansui-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSans';
+    src: url('/common_static/sbsansui-regular.eot');
+    src: url('/common_static/sbsansui-regular.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansui-regular.woff2') format('woff2'),
+url('/common_static/sbsansui-regular.woff') format('woff'),
+url('/common_static/sbsansui-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SBSans';
+    src: url('/common_static/sbsansui-light.eot');
+    src: url('/common_static/sbsansui-light.eot?#iefix') format('embedded-opentype'),
+url('/common_static/sbsansui-light.woff2') format('woff2'),
+url('/common_static/sbsansui-light.woff') format('woff'),
+url('/common_static/sbsansui-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

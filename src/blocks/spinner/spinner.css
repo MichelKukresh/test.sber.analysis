@@ -1,0 +1,37 @@
+.spinner {
+    width: 20px; /* Ширина бублика */
+    height: 20px; /* Высота бублика */
+    border-radius: 50%; /* Скругление для создания круга */
+    background: conic-gradient(#107f8c, white); /* Градиент от зеленоватого к белому */
+    animation: spin 1s linear infinite; /* Анимация вращения */
+    position: relative;
+    overflow: hidden; /* Скрытие лишнего содержимого */
+}
+
+.spinner::before {
+    content: '';
+    position: absolute;
+    top: 2px; /* Смещение для создания эффекта бублика */
+    left: 2px; /* Смещение для создания эффекта бублика */
+    width: 16px; /* Внутренний круг */
+    height: 16px; /* Внутренний круг */
+    border-radius: 50%; /* Скругление для внутреннего круга */
+    background: #107f8c; /* Цвет внутреннего круга */
+}
+
+/* Маленький кружочек как из макета */
+.spinner::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 37px;
+    width: 10px;
+    height: 11px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

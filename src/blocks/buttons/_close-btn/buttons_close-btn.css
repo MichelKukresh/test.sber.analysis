@@ -1,0 +1,12 @@
+.buttons_close-btn {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  background: inherit;
+  padding: 10px;
+  background-image: url("../../../images/close.svg");
+  background-repeat: no-repeat;
+  height: 33px;
+  width: 33px;
+  background-size: cover;
+}

@@ -1,0 +1,12 @@
+.page {
+  font-family: "SBSansInterface", sans-serif;
+  display: flex;
+  flex-direction: column;  
+  background-color: #f2f4f7;
+  display: flex;  
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+

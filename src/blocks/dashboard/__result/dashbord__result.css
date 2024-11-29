@@ -1,0 +1,21 @@
+.dashbord__result {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 40%;
+  right: 40%;
+  align-items: center;
+}
+
+.dashbord__result h3 {
+  font-size: 12px;
+  margin: 0px;
+  font-weight: 400;
+  color: #7D838A;
+}
+
+.dashbord__result span {
+  font-size: 16px;
+  font-weight: 600;
+}

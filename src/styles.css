@@ -1,0 +1,53 @@
+@import url("./vendor/nornalize.css");
+@import url("./vendor/fonts/SBSansInterface/SBSansInterface.css");
+
+@import url("../src/blocks/header/header.css");
+@import url("../src/blocks/header/__container/header__container.css");
+@import url("../src/blocks/header/__nav/header__nav.css");
+
+@import url("../src/blocks/main/main.css");
+
+@import url("../src/blocks/page/page.css");
+@import url("../src/blocks/page/__content-header/page__content-header.css");
+@import url("../src/blocks/page/__content-main/page__content-main.css");
+
+@import url("../src/blocks/logo/logo.css");
+
+@import url("../src/blocks/buttons/buttons.css");
+@import url("../src/blocks/buttons/_exit/buttons_exit.css");
+@import url("../src/blocks/buttons/_log-in/buttons_log-in.css");
+@import url("../src/blocks/buttons/_log-out/buttons_log-out.css");
+@import url("../src/blocks/buttons/_disabled/button_disabled.css");
+@import url("../src/blocks/buttons/_close-btn/buttons_close-btn.css");
+@import url("../src/blocks/buttons/_cancel/buttons_cancel.css");
+@import url("../src/blocks/buttons/_popup-log-out/buttons_popup-log-out.css");
+
+@import url("../src/blocks/form/form.css");
+@import url("../src/blocks/form/__input/form__input.css");
+@import url("../src/blocks/form/__title/form__title.css");
+@import url("../src/blocks/form/__container-input/form__container-input.css");
+@import url("../src/blocks/form/__select/form__select.css");
+
+@import url("../src/blocks/section/section.css");
+@import url("../src/blocks/section/__authorizations/section__authorizations.css");
+@import url("../src/blocks/section/__service-selection/section__service-selection.css");
+@import url("../src/blocks/section/__dashboard/section__dashboard.css");
+@import url("../src/blocks/section/_hidden/section_hidden.css");
+@import url("../src/blocks/section/__loading/section__loding.css");
+
+@import url("../src/blocks/dashboard/dashboard.css");
+@import url("../src/blocks/dashboard/__title/dashboard__title.css");
+@import url("../src/blocks/dashboard/__chart/dashboard__chart.css");
+@import url("../src/blocks/dashboard/__table/dashbord__table.css");
+@import url("../src/blocks/dashboard/__container/dasbord__container.css");
+@import url("../src/blocks/dashboard/__result/dashbord__result.css");
+
+@import url("../src/blocks/popup/popup.css");
+@import url("../src/blocks/popup/__bottom/popup__bottom.css");
+@import url("../src/blocks/popup/__head/popup__head.css");
+@import url("../src/blocks/popup/__content/popup__content.css");
+
+@import url("../src/blocks/overlay/overlay.css");
+
+@import url("../src/blocks/spinner/spinner.css");
+@import url("../src/blocks/spinner/_page/spinner_page.css");

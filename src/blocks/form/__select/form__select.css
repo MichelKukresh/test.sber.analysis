@@ -1,0 +1,20 @@
+.form__select {
+    border: solid #D0D7DD 1px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    color: #7D838A; 
+}
+
+.form__select option {
+    height: 30px;
+    box-shadow: #1F1F2240;
+    border: none;
+    color: #005E7F; 
+    font-size: 14px;
+    font-weight: 400;
+}
+
+

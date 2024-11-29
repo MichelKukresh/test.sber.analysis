@@ -1,0 +1,8 @@
+.dasbord__container {
+    display: flex;
+    border: solid 1px #D0D7DD;
+    border-radius: 16px;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+}

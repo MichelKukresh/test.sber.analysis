@@ -1,0 +1,9 @@
+.dashboard {
+  background-color: #ffffff;
+  padding: 50px 50px 50px 50px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  width: 100%;
+}
