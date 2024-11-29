@@ -5,3 +5,10 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .buttons_log-in {
+    min-width: calc(100% - 20px);
+    padding: 16px 24px;
+  }
+}

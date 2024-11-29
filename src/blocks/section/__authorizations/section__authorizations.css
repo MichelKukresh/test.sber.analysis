@@ -1,6 +1,10 @@
 .section__authorizations {
-    
-    min-width: 360px;
-    margin-top: 120px;
-    
+  min-width: 360px;
+  margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+  .section__authorizations {
+    min-width: calc(100% - 32px);
+  }
 }

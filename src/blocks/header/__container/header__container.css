@@ -1,8 +1,13 @@
 .header__container {
   width: calc(100% - 100px);
   max-width: 1128px;
-  /* padding: 20px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    width: calc(100% - 32px);
+  }
 }

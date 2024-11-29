@@ -4,3 +4,9 @@
   justify-content: center;
   border-bottom: solid #E4E8EB 1px;
 }
+
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+}
