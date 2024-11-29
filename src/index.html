@@ -10,7 +10,7 @@
     <header class="header page__content-header">
       <div class="header__container">
         <a href=""><img src="../src/images/logo.svg" /></a>
-        <div class="header__nav">
+        <div id="headerNav" class="header__nav header__nav_none">
           <span>tourism</span
           ><button id="open-popup" class="buttons buttons_log-out">
             Выйти
@@ -38,7 +38,14 @@
               required
             />
           </div>
-          <div id="loginError" class="login__error"></div>
+
+          <div id="loginError" class="form__error form__error_none">
+            <div class="form__alarm">
+              <div></div>
+              <div></div>
+            </div>
+            <span>Логин или пароль неверны</span>
+          </div>
 
           <button
             id="loginButton"
@@ -95,17 +102,18 @@
           </div>
         </div>
       </section>
-      <section id="loadingMessage" class="section section__loading section_hidden">
+      <section
+        id="loadingMessage"
+        class="section section__loading section_hidden"
+      >
         <div class="spinner spinner_page"></div>
-       </section>
+      </section>
     </main>
-
-   
 
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup">
       <div class="popup__head">
-        <button class="buttons buttons_close-btn" id="close-btn"></button>
+        <button class="buttons buttons_close-btn" id="popup-close-btn"></button>
         <h2>Внимание</h2>
       </div>
       <p class="popup__content">
@@ -113,8 +121,8 @@
         страницу авторизации.
       </p>
       <div class="popup__bottom">
-        <button class="buttons buttons_popup-log-out">Выйти</button
-        ><button class="buttons buttons_cancel">Отмена</button>
+        <button id="popup-log-out-btn" class="buttons buttons_popup-log-out">Выйти</button
+        ><button id="popup-cancel-btn" class="buttons buttons_cancel">Отмена</button>
       </div>
     </div>
 

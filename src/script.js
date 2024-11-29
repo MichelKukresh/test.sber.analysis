@@ -30,18 +30,15 @@ selectElement.addEventListener("change", function () {
   }
 });
 
-// Установим начальный цвет при загрузке страницы
-// if (!selectElement.value) {
-//   selectElement.style.color = "#7D838A";
-// }
-
 // клик по кнопке входа
 document.getElementById("loginButton").addEventListener("click", function () {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
   if (username === "login1" && password === "pass1") {
-    document.getElementById("loginError").textContent = "";
+    // document.getElementById("loginError").textContent = "";
+    document.getElementById("loginError").classList.add("form__error_none");
+    
 
     // спинер
     const loginButton = document.getElementById("loginButton");
@@ -54,8 +51,10 @@ document.getElementById("loginButton").addEventListener("click", function () {
         .classList.remove("section_hidden");
     }, 1000);
   } else {
-    document.getElementById("loginError").textContent =
-      "Неверный логин или пароль";
+
+    document.getElementById("loginError").classList.remove("form__error_none");
+    // document.getElementById("loginError").textContent =
+    //   "Логин или пароль неверны.";
   }
 });
 
@@ -77,6 +76,8 @@ selectServiceButton.addEventListener("click", function () {
 
   setTimeout(function () {
     loadingMessage.classList.add("section_hidden");
+    document.getElementById("headerNav").classList.remove("header__nav_none");
+    
 
     loadChart();
   }, 2000);
@@ -136,7 +137,10 @@ function loadChart() {
 const openPopupButton = document.getElementById("open-popup");
 const overlay = document.getElementById("overlay");
 const popup = document.getElementById("popup");
-const closeButton = document.getElementById("close-btn");
+const popupCloseButton = document.getElementById("popup-close-btn");
+const popupCancelButton = document.getElementById("popup-cancel-btn");
+const popupLogOutButton = document.getElementById("popup-log-out-btn");
+
 
 // Функция для открытия попапа
 function openPopup() {
@@ -152,5 +156,9 @@ function closePopup() {
 
 // Обработчики событий
 openPopupButton.addEventListener("click", openPopup);
-closeButton.addEventListener("click", closePopup);
+popupCloseButton.addEventListener("click", closePopup);
 overlay.addEventListener("click", closePopup);
+popupCancelButton.addEventListener("click", closePopup);
+popupLogOutButton.addEventListener("click", function() {
+  location.reload(); // Перезагрузка страницы
+});
