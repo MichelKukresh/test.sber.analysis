@@ -35,13 +35,13 @@ document.getElementById("loginButton").addEventListener("click", function () {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  if (username === "login1" && password === "pass1") {    
-    document.getElementById("loginError").classList.add("form__error_none");    
+  if (username === "login1" && password === "pass1") {
+    document.getElementById("loginError").classList.add("form__error_none");
 
     // спинер
     const loginButton = document.getElementById("loginButton");
     loginButton.innerHTML =
-      '<div class="loading"><div class="spinner"></div></div>';
+      '<div class="spinner"></div>';
     setTimeout(() => {
       document.getElementById("authorizations").classList.add("section_hidden");
       document
@@ -49,9 +49,7 @@ document.getElementById("loginButton").addEventListener("click", function () {
         .classList.remove("section_hidden");
     }, 1000);
   } else {
-
     document.getElementById("loginError").classList.remove("form__error_none");
-    
   }
 });
 
@@ -74,7 +72,6 @@ selectServiceButton.addEventListener("click", function () {
   setTimeout(function () {
     loadingMessage.classList.add("section_hidden");
     document.getElementById("headerNav").classList.remove("header__nav_none");
-    
 
     loadChart();
   }, 2000);
@@ -83,17 +80,17 @@ selectServiceButton.addEventListener("click", function () {
 // 5 формирование таблицы
 function writeToSheets(table) {
   const dashboardLists = document.getElementById("dashboardLists");
-  dashboardLists.innerHTML = ''; 
+  dashboardLists.innerHTML = "";
 
-  table.forEach(item => {
+  table.forEach((item) => {
     const li = document.createElement("li");
-    li.innerHTML = 
-      `<div>
+    li.innerHTML = `<div>
+      <div>
         <div style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:${item.colors};"></div>
         <span>${item.labels}</span>
+        </div>
         <span>${item.values}%</span>
-      </div>`
-    ;
+      </div>`;
     dashboardLists.appendChild(li);
   });
 }
@@ -128,8 +125,12 @@ const openPopup = () => {
 // Обработчики событий
 openPopupButton.addEventListener("click", openPopup);
 overlay.addEventListener("click", closePopup);
-document.getElementById("popup-close-btn").addEventListener("click", closePopup);
-document.getElementById("popup-cancel-btn").addEventListener("click", closePopup);
+document
+  .getElementById("popup-close-btn")
+  .addEventListener("click", closePopup);
+document
+  .getElementById("popup-cancel-btn")
+  .addEventListener("click", closePopup);
 document.getElementById("popup-log-out-btn").addEventListener("click", () => {
   location.reload(); // Перезагрузка страницы
 });
