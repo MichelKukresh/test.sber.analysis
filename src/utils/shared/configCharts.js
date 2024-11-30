@@ -5,7 +5,7 @@ function makeConfig(dataSheets, ChartDataLabels){
         options: {
           cutout: '85%', // размер внутренней области бублика      
          layout: {
-          // !отступы самого графика, иначе цыфры срезаются
+          // !отступы самого графика, иначе цифры срезаются
           padding: {
               top: 30,
               bottom: 30,
@@ -39,7 +39,7 @@ function makeConfig(dataSheets, ChartDataLabels){
               
               anchor: 'end', 
               align: 'end', 
-              offset: 5 // сдвиг на 20 пикселей
+              offset: 5 // сдвиг на n пикселей (отлет от диаграммы)
               
             }
           }

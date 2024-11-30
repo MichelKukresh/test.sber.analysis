@@ -5,3 +5,10 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .section__dashboard {
+    height: calc(100vh - 60px);
+  }
+}
+

@@ -1,7 +1,7 @@
 import { dataSheets, tableSheets } from "./utils/api.js";
 import { makeConfig } from "./utils/shared/configCharts.js";
 
-// управление активностью кнопок формы
+// 1 управление активностью кнопок формы
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 const loginButton = document.getElementById("loginButton");
@@ -19,7 +19,7 @@ function toggleButtonState() {
 usernameInput.addEventListener("input", toggleButtonState);
 passwordInput.addEventListener("input", toggleButtonState);
 
-// скрипт сделать select как в макете
+// 2 скрипт сделать select как в макете
 const selectElement = document.getElementById("serviceSelect");
 
 selectElement.addEventListener("change", function () {
@@ -30,15 +30,13 @@ selectElement.addEventListener("change", function () {
   }
 });
 
-// клик по кнопке входа
+// 3 клик по кнопке входа
 document.getElementById("loginButton").addEventListener("click", function () {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  if (username === "login1" && password === "pass1") {
-    // document.getElementById("loginError").textContent = "";
-    document.getElementById("loginError").classList.add("form__error_none");
-    
+  if (username === "login1" && password === "pass1") {    
+    document.getElementById("loginError").classList.add("form__error_none");    
 
     // спинер
     const loginButton = document.getElementById("loginButton");
@@ -53,12 +51,11 @@ document.getElementById("loginButton").addEventListener("click", function () {
   } else {
 
     document.getElementById("loginError").classList.remove("form__error_none");
-    // document.getElementById("loginError").textContent =
-    //   "Логин или пароль неверны.";
+    
   }
 });
 
-// Обработка выбора сервиса
+// 4 Обработка выбора сервиса
 const serviceSelect = document.getElementById("serviceSelect");
 const selectServiceButton = document.getElementById("selectServiceButton");
 const loadingMessage = document.getElementById("loadingMessage");
@@ -83,41 +80,20 @@ selectServiceButton.addEventListener("click", function () {
   }, 2000);
 });
 
+// 5 формирование таблицы
 function writeToSheets(table) {
-  // Находим элемент по ID
   const dashboardLists = document.getElementById("dashboardLists");
+  dashboardLists.innerHTML = ''; 
 
-  // Создаем и добавляем элементы <li>
-  table.forEach((item) => {
+  table.forEach(item => {
     const li = document.createElement("li");
-
-    // Создаем контейнер для кружка
-    const circleContainer = document.createElement("div");
-
-    // Создаем кружочек
-    const circle = document.createElement("div");
-    circle.style.display = "inline-block";
-    circle.style.width = "8px";
-    circle.style.height = "8px";
-    circle.style.borderRadius = "50%";
-    circle.style.backgroundColor = item.colors;
-
-    // Добавляем кружок в контейнер
-    circleContainer.appendChild(circle);
-
-    // Создаем процент
-    const procent = document.createElement("span");
-    procent.textContent = `${item.values}%`;
-
-    // Устанавливаем текст для метки
-    const label = document.createElement("span");
-    label.textContent = item.labels;
-    circleContainer.appendChild(label);
-
-    // Добавляем контейнер с кружком, текст метки и процент в элемент списка
-    li.appendChild(circleContainer);
-    li.appendChild(procent);
-
+    li.innerHTML = 
+      `<div>
+        <div style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:${item.colors};"></div>
+        <span>${item.labels}</span>
+        <span>${item.values}%</span>
+      </div>`
+    ;
     dashboardLists.appendChild(li);
   });
 }
@@ -133,32 +109,27 @@ function loadChart() {
   const chart = new Chart(ctx, config);
 }
 
-// скрипт попапа
+// 6 Скрипт попапа
 const openPopupButton = document.getElementById("open-popup");
 const overlay = document.getElementById("overlay");
 const popup = document.getElementById("popup");
-const popupCloseButton = document.getElementById("popup-close-btn");
-const popupCancelButton = document.getElementById("popup-cancel-btn");
-const popupLogOutButton = document.getElementById("popup-log-out-btn");
 
-
-// Функция для открытия попапа
-function openPopup() {
-  overlay.style.display = "block";
-  popup.style.display = "block";
-}
-
-// Функция для закрытия попапа
-function closePopup() {
+const closePopup = () => {
   overlay.style.display = "none";
   popup.style.display = "none";
-}
+};
+
+// Функция для открытия попапа
+const openPopup = () => {
+  overlay.style.display = "block";
+  popup.style.display = "block";
+};
 
 // Обработчики событий
 openPopupButton.addEventListener("click", openPopup);
-popupCloseButton.addEventListener("click", closePopup);
 overlay.addEventListener("click", closePopup);
-popupCancelButton.addEventListener("click", closePopup);
-popupLogOutButton.addEventListener("click", function() {
+document.getElementById("popup-close-btn").addEventListener("click", closePopup);
+document.getElementById("popup-cancel-btn").addEventListener("click", closePopup);
+document.getElementById("popup-log-out-btn").addEventListener("click", () => {
   location.reload(); // Перезагрузка страницы
 });

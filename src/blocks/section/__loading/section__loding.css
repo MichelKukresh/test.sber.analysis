@@ -1,3 +1,9 @@
 .section__loading {
   margin-top: calc(50vh - 80px);
 }
+
+@media (max-width: 768px) {
+  .section__loading {
+    margin-top: calc(50vh - 60px);
+  }
+}
