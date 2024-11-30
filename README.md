@@ -20,6 +20,7 @@
 ```git clone https://github.com/MichelKukresh/test.sber.analytics.git```
 
 2. Откройте терминал в корне проекта
+
 2.1 Соберите проект
 
 ```docker build . -t nodeproject```
