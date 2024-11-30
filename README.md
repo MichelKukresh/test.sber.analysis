@@ -17,16 +17,16 @@
 
 1. Клонируйте проект 
 
-git clone https://github.com/MichelKukresh/test.sber.analytics.git
+```git clone https://github.com/MichelKukresh/test.sber.analytics.git```
 
 2. Откройте терминал в корне проекта
 2.1 Соберите проект
 
-docker build . -t nodeproject 
+```docker build . -t nodeproject```
 
 2.2 Совместите порты !ВНИМАНИЕ! проект настроен только на порт 8080
 
-docker run -p 8080:8080 nodeproject
+```docker run -p 8080:8080 nodeproject```
 
 2.3 Перейдите по ссылке или в подсказке в терминале
 
@@ -37,7 +37,7 @@ http://localhost:8080/src/index.html
 В консоле прлисходит автоматический запрос с логирование и запросом двнных к графику, доступнов панеле разработчика.
 
 Либо используйре POSTMAN
- 
+
 Проверка авторизации
 http://localhost:8080/signin
 body {
