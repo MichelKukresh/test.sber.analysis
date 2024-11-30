@@ -17,25 +17,21 @@
 
 1. Клонируйте проект:
 
-   
-bash
-   git clone https://github.com/MichelKukresh/test.sber.analytics.git
+
+   ```git clone https://github.com/MichelKukresh/test.sber.analytics.git```
    
 
 2. Откройте терминал в корне проекта.
 
-3. Соберите проект:
+3. Соберите проект:   
 
-   
-bash
-   docker build . -t nodeproject
+   ```docker build . -t nodeproject```
    
 
 4. Совместите порты. **ВНИМАНИЕ!** Проект настроен только на порт 8080:
 
-   
-bash
-   docker run -p 8080:8080 nodeproject
+
+   ```docker run -p 8080:8080 nodeproject```
    
 
 5. Перейдите по ссылке или в подсказке в терминале:
