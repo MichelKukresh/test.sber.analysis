@@ -1,19 +1,16 @@
 .form__select {
-    border: solid #D0D7DD 1px;
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: 400;
-    width: 100%;
-    color: #7D838A; 
+  border: solid #d0d7dd 1px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  color: #7d838a;
 }
 
-
-.form__select option {   
-    border: none;
-    color: #005E7F; 
-    font-size: 14px;
-    font-weight: 400;
+.form__select option {
+  border: none;
+  color: #005e7f;
+  font-size: 14px;
+  font-weight: 400;
 }
-
-

@@ -1,10 +1,18 @@
 .dasbord__container {
-    display: flex;
-    border: solid 1px #D0D7DD;
-    border-radius: 16px;
-    width: 100%;
-    gap: 20px;
-    padding-top: 25px;
-    padding-bottom:  25px;
-    
+  display: flex;
+  border: solid 1px #d0d7dd;
+  border-radius: 16px;
+  width: 100%;
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .dasbord__container {
+    flex-direction: column;
+    border: none;
+    padding-top: 0px;
+    gap: 0px;
+  }
 }

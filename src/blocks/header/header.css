@@ -2,7 +2,7 @@
   height: 80px;
   display: flex;
   justify-content: center;
-  border-bottom: solid #E4E8EB 1px;
+  border-bottom: solid #e4e8eb 1px;
 }
 
 @media (max-width: 768px) {

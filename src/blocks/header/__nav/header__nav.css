@@ -1,12 +1,17 @@
 .header__nav {
-    display: flex;
-    gap: 26px;
-    align-items: center;
-
+  display: flex;
+  gap: 26px;
+  align-items: center;
 }
 
 .header__nav span {
-color: #005E7F;
-font-weight: 400;
-font-size: 14px;
+  color: #005e7f;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .header__nav span {
+    font-size: 15px;
+  }
 }

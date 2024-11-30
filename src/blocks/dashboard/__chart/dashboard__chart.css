@@ -1,6 +1,5 @@
 .dashboard__chart {
-    width: 220px;
-    height: 220px;
-    /* padding: 20px; */
-    box-sizing: border-box;
+  width: 220px;
+  height: 220px;
+  box-sizing: border-box;
 }

@@ -1,8 +1,15 @@
 .popup__content {
-    min-height: 140px;
-    padding: 30px 30px;
-    margin: 0px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
+  min-height: 140px;
+  padding: 30px 30px;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .popup__content {
+    padding: 20px 20px;
+    min-height: 160px;
+  }
 }

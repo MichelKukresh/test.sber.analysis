@@ -12,3 +12,12 @@
   margin-top: 5px;
   margin-right: 7px;
 }
+
+@media (max-width: 768px) {
+  .buttons_close-btn {
+    height: 30px;
+    width: 30px;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+}

@@ -1,8 +1,8 @@
 .form__input {
-    border: solid #D0D7DD 1px;
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: 400;
-    height: 16px;
+  border: solid #d0d7dd 1px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  height: 16px;
 }

@@ -1,7 +1,11 @@
 .dashboard__chart-container {
-    /* flex: 0 0 440px; */
-    flex: 0.7;
-    
-    display: flex; 
-    justify-content: center;
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard__chart-container {
+    justify-content: start;
+  }
 }

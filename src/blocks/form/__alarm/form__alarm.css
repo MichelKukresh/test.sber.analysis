@@ -1,23 +1,22 @@
 .form__alarm {
-    position: relative;
-    width: 16px; 
-    height: 16px; 
-    background-color: #DB1237;
-    padding: 2px;
-    border-radius: 50%;
-
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #db1237;
+  padding: 2px;
+  border-radius: 50%;
 }
 .form__alarm div {
-    position: absolute;
-    width: 66%;
-    height: 2px;
-    top: 9px;
-    right: 3px;
-    background-color: #ffffff;
+  position: absolute;
+  width: 66%;
+  height: 2px;
+  top: 9px;
+  right: 3px;
+  background-color: #ffffff;
 }
 .form__alarm div:first-child {
-    transform: rotate(45deg); 
+  transform: rotate(45deg);
 }
 .form__alarm div:last-child {
-    transform: rotate(-45deg); 
+  transform: rotate(-45deg);
 }
