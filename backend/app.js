@@ -4,7 +4,9 @@ const express = require('express');
 const cors = require('cors');
 
 // Слушаем 3000 порт
-const { PORT = 3000 } = process.env;
+const { PORT = 8080 } = process.env;
+
+const path = require('path');
 const { celebrate, Joi } = require('celebrate');
 const { errors } = require('celebrate');
 
@@ -38,11 +40,13 @@ app.use(cors());
 app.use(express.json());
 
 // используем устанавливаем лимитер для исключения DoS атак
-app.use(limiter);
-app.use(helmet());
+//app.use(limiter);
+//app.use(helmet());
 
 // !!важно до роутов
 app.use(requestLogger); // подключаем логгер запросов
+
+app.use(express.static(__dirname));
 
 app.post('/signin', celebrate({
   body: Joi.object().keys({
@@ -68,5 +72,7 @@ app.use('*', (req, res, next) => {
 app.use(centralizedErrorHandler);
 
 app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
+  console.log("Добрый день, перейдите по ссылке ниже");
+  console.log("Правильная комбинация логина и пароля - login1 pass1");
+  console.log(`Сервис доступен по ссылке http://localhost:8080/src/index.html`)
 });
