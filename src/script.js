@@ -1,5 +1,6 @@
 import { dataSheets, tableSheets } from "./utils/api.js";
 import { makeConfig } from "./utils/shared/configCharts.js";
+import {loginAndFetchData} from "./utils/shared/testBackendInConsole.js"
 
 // 1 управление активностью кнопок формы
 const usernameInput = document.getElementById("username");
